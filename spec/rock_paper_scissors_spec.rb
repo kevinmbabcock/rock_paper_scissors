@@ -2,9 +2,9 @@ require('pry')
 require('rspec')
 require('rock_paper_scissors')
 
-describe('rock_paper_scissors') do
+describe('String#rock_paper_scissors') do
   it("return player 1 with rock and scissors passed as arguments") do
-    expect(rock_paper_scissors("rock", "scissors")).to(eq("player1"))
+    expect(rock_paper_scissors("rock","scissors")).to(eq("player1"))
   end
   it("return tie with rock and rock passed as arguments") do
     expect(rock_paper_scissors("rock", "rock")).to(eq("tie"))
