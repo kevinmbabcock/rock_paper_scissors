@@ -18,5 +18,10 @@ describe('rock_paper_scissors') do
   it("return player2 with paper and scissors passed as arguments") do
     expect(rock_paper_scissors("paper", "scissors")).to(eq("player2"))
   end
-
+  it("return player1 with scissors and paper passed as arguments") do
+    expect(rock_paper_scissors("scissors", "paper")).to(eq("player1"))
+  end
+  it("return player2 with scissors and rock passed as arguments") do
+    expect(rock_paper_scissors("scissors", "rock")).to(eq("player2"))
+  end
 end

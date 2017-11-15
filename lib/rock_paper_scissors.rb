@@ -13,5 +13,11 @@ def rock_paper_scissors(player1_turn, player2_turn )
     else
       return "player2"
     end
+  elsif (player1_turn == "scissors")
+    if(player2_turn == "paper")
+      return "player1"
+    else
+      return "player2"
+    end
   end
 end
